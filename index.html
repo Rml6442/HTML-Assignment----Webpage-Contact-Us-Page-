@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!-- Webpage Designer: Robert Laggan -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Give us your penguin facts!</title>
+
+    <!-- Accessing the stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Accessing the JavaScript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="title" style="color: #ea7d23;">Contact Us</h1>
+    </header>
+    
+    <!-- Code for the Navigation Panel for the 3 pages of the website -->
+    <table style="color: #ffffff;">
+      <tr>
+        <th><a href="https://welcome-rml-html-assignment-webpage.glitch.me" style="color: #ea2337;">Welcome Page</a></th>
+        <th><a href="https://thepenguingallery-rml-html-assignment-webpage.glitch.me" style="color: #ea2337;">The Penguin Gallery</a></th>
+        <th><a href="https://contactus-rml-html-assignment-webpage.glitch.me" style="color: #ea7d23;">Contact Us</a></th>
+      </tr>      
+    </table>
+    
+    <!-- Code for PHP email form, requiring only the user's email and fact the user intends to send to the website owners -->
+    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+      <h2 style="color: #ea2337;">Do you have some penguin facts you think we should know? Email it to us!</h2>
+      
+      Your e-mail:<br>
+      <input type="text" name="mail"><br>
+      Your fact(s):<br>
+      <input type="text" name="comment" size="50"><br><br>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+      
+      <h4>We love all the support we have gotten from our loyal readers over the last several years. Thank you!</h4>
+    </form>
+    
+  </body>
+</html>
