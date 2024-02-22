@@ -1,0 +1,156 @@
+/* Our default values set as CSS variables */
+:root {
+
+/* Colored like a little penguin */
+background-image: linear-gradient(to right, #ffffff 1%, #6e849c 4%, #242b54 8%, #04020d 10%, #04020d 90%, #242b54 92%, #6e849c 96%, #ffffff 99%);   
+  --color-text-main: #577bfb;
+  --color-primary: #577bfb;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  color: #577bfb;
+  font-family: Arial, Helvetica, sans-serif;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  color: #577bfb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+/* Footer */
+.footer {
+  color: #ea7d23;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 80%;
+  flex-wrap: wrap;
+  border-top: 4px solid black;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+
+header 
+{
+  margin-left: 10em;
+  margin-right: 10em;
+  text-align: center;
+  padding: 2em;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: left;
+  margin: 0 auto;
+  width: 70%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
+
+.title {
+  color: #577bfb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 105%;
+  margin: 0px 0px 0px 0px;
+}
+
+/* Very light scaling for our illustration */
+.illustration {
+  display: block;
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  margin: 0px 0px 0px 0px;
+  box-shadow: -5px 5px 10px #000000;
+}
+
+/* Text formatting */
+.text {
+  color: #ea7d23;
+  margin: 1rem auto 0;
+  text-align: left;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  color: white
+}
+
+/* Interactive image */
+.illustration:active {
+  transform: translateY(5px);
+}
+
+/* Button dip */
+.dipped {
+  transform: translateY(5px);
+}
+
+/* Table Formatting */
+table, td{
+  border: 0.3em solid black;
+  height: 50px;
+  width: 80%;
+  border-collapse: collapse;
+  th{
+    border: 0.3em solid;
+  }
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  tr > td + td {
+    border-left-width: 10px;
+  }
+  tr + tr > td {
+    border-top-width: 10px;
+  }
+}
+
+/* Form Formatting */
+form{
+  color: #ea7d23;
+  margin-left: 30%;
+  margin-right: 10em;
+  text-align: left;
+  padding: 2em;
+}
